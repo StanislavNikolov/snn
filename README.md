@@ -1,3 +1,4 @@
+# How to use
 Look at test.js for example usage.  
 TL;DR:  
 ```javascript
@@ -24,3 +25,9 @@ for(let i = 0;i < 100;i ++) {
 console.log(nn.run([1, 0, 0, 3])) // should be close to zero;
 console.log(nn.run([-12, 4, 34, 12])) // can be absouletly anything
 ```
+
+# TODO
+* More testing
+* Error checking in constructors
+* Exporting / importing data (for now you can hack around with JSON.Stringify and then adding funtions)
+* Implement back propagation for supervised learning (inputs with known outputs)
