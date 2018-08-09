@@ -30,7 +30,7 @@ const simple_train = () => {
 
 const xor_train = (MUTATE_CHANCE) => {
 	const train = () => {
-		let nn = new snn.Network([2, 2, 1]);
+		let nn = new snn.Network([2, 2, 1], snn.ReLU);
 		const data = [{input: [1, 1], output: [0]}, {input: [1, 0], output: [1]},
 		              {input: [0, 1], output: [1]}, {input: [0, 0], output: [0]}];
 
