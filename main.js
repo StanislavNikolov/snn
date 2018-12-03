@@ -17,7 +17,7 @@ class Neuron {
 		this.weights = [];
 		this.activationFunction = af;
 		for(let i = 0;i < size;i ++) this.weights.push((Math.random()*2 - 1) * WEIGHT_SCALE);
-		this.weights.push(0); // bias
+		this.weights.push((Math.random()*2 - 1) * WEIGHT_SCALE); // bias
 	}
 	run(input) {
 		if(input.length !== this.weights.length - 1) {
